@@ -13,28 +13,42 @@
 <br>
 
 [![1217050105](https://img.shields.io/badge/105-Muhammad%20Zaky%20M%20S-blue)](https://github.com/inipunyaku) [![1217050115](https://img.shields.io/badge/115-Pitriani-blue)](https://github.com/imamfirdaus-if) 
-  [![1217050116](https://img.shields.io/badge/116-Raden%20Ibnu%20H%20W-blue)](https://github.com/Tustiantiifany)[![1217050139](https://img.shields.io/badge/139-Vina%20Patricia-blue)](https://github.com/rizafajar7) [![1217050150](https://img.shields.io/badge/150-Ravigo%20Haykal%20Aldhan-blue)](https://github.com/rizkiisa21)
+  [![1217050116](https://img.shields.io/badge/116-Raden%20Ibnu%20H%20W-blue)](https://github.com/Tustiantiifany) [![1217050139](https://img.shields.io/badge/139-Vina%20Patricia-blue)](https://github.com/rizafajar7) [![1217050150](https://img.shields.io/badge/150-Ravigo%20Haykal%20Aldhan-blue)](https://github.com/rizkiisa21)
   <br> [Teknik Informatika](http://if.uinsgd.ac.id/) [UIN Sunan Gunung Djati Bandung](https://uinsgd.ac.id/) 
 
 </div>
 
-![Schedule](https://img.shields.io/badge/Schedule-16%20November%202022-green)
+![Mata Kuliah](https://img.shields.io/badge/Mata%20Kuliah-Organisasi%20dan%20Arsitektur%20Komputer-green)
 ## Latar Belakang Masalah
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
 ## Tujuan
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
 ## Dasar Teori
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
 ## Metode Percobaan
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
 ### Alat & Bahan
+| No  | Alat | Jumlah |
+| ------------- | ------------- | ------------- |
+| 1 | | |
+| 3 | | |
+| 2 | | |
 
 ### Prosedur Percobaan
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
 ## Hasil
+![Hasil](https://fit.labs.telkomuniversity.ac.id/wp-content/uploads/sites/37/2019/02/k-1.png)
 
 ## Pembahasan
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
 ## Kesimpulan
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
 ## Lampiran
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
