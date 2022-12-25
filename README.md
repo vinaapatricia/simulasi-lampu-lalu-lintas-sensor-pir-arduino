@@ -87,9 +87,12 @@ Final, problems arise when changes are made to the machine mechanism (program co
 
 ## Conclusion
 <div align="justify">
+
 From this traffic light simulation experiment it can be concluded:
 The light will turn on alternately with a green time span of 8 seconds, yellow for 2 seconds, and red for 10 seconds plus an indicator for how long the light is on using a 7 segment 4 digit display. And equipped with a sensor that is connected to a buzzer, which will sound when motion is detected by the sensor when the light is red. However, there are several problems that arise in the sensor, namely:
+
 - The sensor used is an area scanning type sensor so that the sensor does not only detect objects in front of it, but also objects around it (left, right, and so on). This can cause when there are no objects passing in front of the sensor, but there are objects around the sensor, the buzzer will still sound.
 - There are also cases when an object passes through the sensor at high speed, it is possible that the sensor will fail to detect it so that the buzzer will not sound.
 - Problems arise when changes are made to the machine mechanism (program code). When that happens, it takes at least 30 seconds for the machine to run normally.
+
 </div>
