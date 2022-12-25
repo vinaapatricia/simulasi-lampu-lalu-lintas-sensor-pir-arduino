@@ -1,0 +1,324 @@
+Showing number 0-9 on a Common Anode 7-segment LED display
+  Displays the numbers 0-9 on the display, with one second inbetween.
+    A
+   ---
+F |   | B
+  | G |
+   ---
+E |   | C
+  |   |
+   ---
+    D
+  This example code is in the public domain.
+ */
+ 
+// Pin 2-8 is connected to the 7 segments of the display.
+ 
+int pinA = 2;
+int pinB = 4;
+int pinC = 7;
+int pinD = 6;
+int pinE = 8;
+int pinF = 3;
+int pinG = 5;
+int D1 = 1;
+int D2 = 0;
+int h = 12, k = 11, m = 10;
+int buzz = 13, pir =9;
+ 
+// the setup routine runs once when you press reset:
+void setup() {                
+  // initialize the digital pins as outputs.
+  pinMode(pinA, OUTPUT);    
+  pinMode(pinB, OUTPUT);    
+  pinMode(pinC, OUTPUT);    
+  pinMode(pinD, OUTPUT);    
+  pinMode(pinE, OUTPUT);    
+  pinMode(pinF, OUTPUT);    
+  pinMode(pinG, OUTPUT);  
+  pinMode(D1, OUTPUT);  
+  pinMode(D2, OUTPUT);  
+  pinMode(pir, INPUT);
+  pinMode(buzz, OUTPUT);
+  pinMode(h, OUTPUT);
+  pinMode(k, OUTPUT);
+  pinMode(m, OUTPUT);
+  delay(30000);
+  digitalWrite(buzz, HIGH);
+  delay(200);
+  digitalWrite(buzz, HIGH);
+  delay(50);
+  digitalWrite(buzz, LOW);
+}
+ 
+void myPir(int hi, int lo){
+  if(digitalRead(pir)==HIGH){
+    digitalWrite(buzz, HIGH);
+    delay(280);
+    hi++;
+  }else{
+    digitalWrite(buzz, LOW);
+    delay(10);
+    lo++;
+  }
+  if(((hi >3) || ((lo)>98) || (((hi*3)+(lo-98))>10))){
+    digitalWrite(buzz, LOW);
+    return ;
+  }
+  digitalWrite(buzz, LOW);
+  return myPir(hi, lo);
+}
+ 
+int co = 0;
+// the loop routine runs over and over again forever:
+void loop() {
+  digitalWrite(h, HIGH);
+  siklus();
+  digitalWrite(h, LOW);
+  digitalWrite(m, HIGH);
+  int hi=0, lo=0;
+  redSiklus(hi,lo);
+  digitalWrite(m, LOW);
+}
+ 
+void siklus(){
+  while(co<=501){
+  if(co==500){
+  digitalWrite(D1, 1);
+  digitalWrite(D2, LOW);
+  //1
+  digitalWrite(pinA, 1);  
+  digitalWrite(pinB, HIGH);  
+  digitalWrite(pinC, HIGH);  
+  digitalWrite(pinD, HIGH);  
+  digitalWrite(pinE, LOW);  
+  digitalWrite(pinF, 1);  
+  digitalWrite(pinG, 1);
+  delay(1000);
+  //8
+  digitalWrite(pinA, 1);  
+  digitalWrite(pinB, 1);  
+  digitalWrite(pinC, 1);  
+  digitalWrite(pinD, 1);  
+  digitalWrite(pinE, 1);  
+  digitalWrite(pinF, 1);  
+  digitalWrite(pinG, 1);
+  delay(1000);
+  //7
+  digitalWrite(pinA, 1);  
+  digitalWrite(pinB, 1);  
+  digitalWrite(pinC, 1);  
+  digitalWrite(pinD, 0);  
+  digitalWrite(pinE, 0);  
+  digitalWrite(pinF, 0);  
+  digitalWrite(pinG, 0);
+  delay(1000);
+  //6
+  digitalWrite(pinA, 1);  
+  digitalWrite(pinB, 0);  
+  digitalWrite(pinC, 1);  
+  digitalWrite(pinD, 1);  
+  digitalWrite(pinE, 1);  
+  digitalWrite(pinF, 1);  
+  digitalWrite(pinG, 1);
+  delay(1000);
+  //5
+  digitalWrite(pinA, 1);  
+  digitalWrite(pinB, 0);  
+  digitalWrite(pinC, 1);  
+  digitalWrite(pinD, 1);  
+  digitalWrite(pinE, 0);  
+  digitalWrite(pinF, 1);  
+  digitalWrite(pinG, 1);
+  delay(1000);
+  //4
+  digitalWrite(pinA, 0);  
+  digitalWrite(pinB, 1);  
+  digitalWrite(pinC, 1);  
+  digitalWrite(pinD, 0);  
+  digitalWrite(pinE, 0);  
+  digitalWrite(pinF, 1);  
+  digitalWrite(pinG, 1);
+  delay(1000);
+  //3
+  digitalWrite(pinA, 1);  
+  digitalWrite(pinB, 1);  
+  digitalWrite(pinC, 1);  
+  digitalWrite(pinD, 1);  
+  digitalWrite(pinE, 0);  
+  digitalWrite(pinF, 0);  
+  digitalWrite(pinG, 1);
+  delay(1000);
+  digitalWrite(h, LOW);
+  digitalWrite(k, HIGH);
+  //2
+  digitalWrite(pinA, 1);  
+  digitalWrite(pinB, 1);  
+  digitalWrite(pinC, 0);  
+  digitalWrite(pinD, 1);  
+  digitalWrite(pinE, 1);  
+  digitalWrite(pinF, 0);  
+  digitalWrite(pinG, 1);
+  delay(1000);
+  //1
+  digitalWrite(pinA, 0);  
+  digitalWrite(pinB, 1);  
+  digitalWrite(pinC, 1);  
+  digitalWrite(pinD, 0);  
+  digitalWrite(pinE, 0);  
+  digitalWrite(pinF, 0);  
+  digitalWrite(pinG, 0);
+  delay(1000);
+  //0
+  digitalWrite(pinA, 1);  
+  digitalWrite(pinB, 1);  
+  digitalWrite(pinC, 1);  
+  digitalWrite(pinD, 1);  
+  digitalWrite(pinE, 1);  
+  digitalWrite(pinF, 1);  
+  digitalWrite(pinG, 0);
+  delay(1000);
+  digitalWrite(k, LOW);
+  return ;
+  }
+  digitalWrite(D1, LOW);
+  digitalWrite(D2, HIGH);
+  //1
+  digitalWrite(pinA, LOW);  
+  digitalWrite(pinB, HIGH);  
+  digitalWrite(pinC, HIGH);  
+  digitalWrite(pinD, LOW);  
+  digitalWrite(pinE, LOW);  
+  digitalWrite(pinF, LOW);  
+  digitalWrite(pinG, LOW);
+  delay(1);
+  digitalWrite(D1, HIGH);
+  digitalWrite(D2, LOW);
+  digitalWrite(pinA, 1);  
+  digitalWrite(pinB, 1);  
+  digitalWrite(pinC, 1);  
+  digitalWrite(pinD, 1);  
+  digitalWrite(pinE, 1);  
+  digitalWrite(pinF, 1);  
+  digitalWrite(pinG, 0);
+  delay(1);
+  co++;
+  }
+}
+void redSiklus(int hi, int lo){
+  while(co<=501){
+  if(co==500){
+  digitalWrite(D1, 1);
+  digitalWrite(D2, LOW);
+  //9
+  digitalWrite(pinA, 1);  
+  digitalWrite(pinB, HIGH);  
+  digitalWrite(pinC, HIGH);  
+  digitalWrite(pinD, HIGH);  
+  digitalWrite(pinE, LOW);  
+  digitalWrite(pinF, 1);  
+  digitalWrite(pinG, 1);
+  myPir(hi,lo);
+  //8
+  digitalWrite(pinA, 1);  
+  digitalWrite(pinB, 1);  
+  digitalWrite(pinC, 1);  
+  digitalWrite(pinD, 1);  
+  digitalWrite(pinE, 1);  
+  digitalWrite(pinF, 1);  
+  digitalWrite(pinG, 1);
+  myPir(hi,lo);
+  //7
+  digitalWrite(pinA, 1);  
+  digitalWrite(pinB, 1);  
+  digitalWrite(pinC, 1);  
+  digitalWrite(pinD, 0);  
+  digitalWrite(pinE, 0);  
+  digitalWrite(pinF, 0);  
+  digitalWrite(pinG, 0);
+  myPir(hi,lo);
+  //6
+  digitalWrite(pinA, 1);  
+  digitalWrite(pinB, 0);  
+  digitalWrite(pinC, 1);  
+  digitalWrite(pinD, 1);  
+  digitalWrite(pinE, 1);  
+  digitalWrite(pinF, 1);  
+  digitalWrite(pinG, 1);
+  myPir(hi,lo);
+  //5
+  digitalWrite(pinA, 1);  
+  digitalWrite(pinB, 0);  
+  digitalWrite(pinC, 1);  
+  digitalWrite(pinD, 1);  
+  digitalWrite(pinE, 0);  
+  digitalWrite(pinF, 1);  
+  digitalWrite(pinG, 1);
+  myPir(hi,lo);
+  //4
+  digitalWrite(pinA, 0);  
+  digitalWrite(pinB, 1);  
+  digitalWrite(pinC, 1);  
+  digitalWrite(pinD, 0);  
+  digitalWrite(pinE, 0);  
+  digitalWrite(pinF, 1);  
+  digitalWrite(pinG, 1);
+  myPir(hi,lo);
+  //3
+  digitalWrite(pinA, 1);  
+  digitalWrite(pinB, 1);  
+  digitalWrite(pinC, 1);  
+  digitalWrite(pinD, 1);  
+  digitalWrite(pinE, 0);  
+  digitalWrite(pinF, 0);  
+  digitalWrite(pinG, 1);
+  myPir(hi,lo);
+  //2
+  digitalWrite(pinA, 1);  
+  digitalWrite(pinB, 1);  
+  digitalWrite(pinC, 0);  
+  digitalWrite(pinD, 1);  
+  digitalWrite(pinE, 1);  
+  digitalWrite(pinF, 0);  
+  digitalWrite(pinG, 1);
+  myPir(hi,lo);
+  //1
+  digitalWrite(pinA, 0);  
+  digitalWrite(pinB, 1);  
+  digitalWrite(pinC, 1);  
+  digitalWrite(pinD, 0);  
+  digitalWrite(pinE, 0);  
+  digitalWrite(pinF, 0);  
+  digitalWrite(pinG, 0);
+  myPir(hi,lo);
+  //0
+  digitalWrite(pinA, 1);  
+  digitalWrite(pinB, 1);  
+  digitalWrite(pinC, 1);  
+  digitalWrite(pinD, 1);  
+  digitalWrite(pinE, 1);  
+  digitalWrite(pinF, 1);  
+  digitalWrite(pinG, 0);
+  return ;
+  }
+  digitalWrite(D1, LOW);
+  digitalWrite(D2, HIGH);
+  //1
+  digitalWrite(pinA, LOW);  
+  digitalWrite(pinB, HIGH);  
+  digitalWrite(pinC, HIGH);  
+  digitalWrite(pinD, LOW);  
+  digitalWrite(pinE, LOW);  
+  digitalWrite(pinF, LOW);  
+  digitalWrite(pinG, LOW);
+  delay(1);
+  digitalWrite(D1, HIGH);
+  digitalWrite(D2, LOW);
+  digitalWrite(pinA, 1);  
+  digitalWrite(pinB, 1);  
+  digitalWrite(pinC, 1);  
+  digitalWrite(pinD, 1);  
+  digitalWrite(pinE, 1);  
+  digitalWrite(pinF, 1);  
+  digitalWrite(pinG, 0);
+  delay(1);
