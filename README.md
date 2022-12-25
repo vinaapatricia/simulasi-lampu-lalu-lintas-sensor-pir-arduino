@@ -13,8 +13,8 @@
 
 <br>
 
-[![1217050105](https://img.shields.io/badge/105-Muhammad%20Zaky%20M%20S-blue)](https://github.com/inipunyaku) [![1217050114](https://img.shields.io/badge/114-Pancadrya%20Y%20P-blue)](https://github.com/inipunyaku) [![1217050115](https://img.shields.io/badge/115-Pitriani-blue)](https://github.com/imamfirdaus-if) 
-  [![1217050116](https://img.shields.io/badge/116-Raden%20Ibnu%20H%20W-blue)](https://github.com/Tustiantiifany) [![1217050139](https://img.shields.io/badge/139-Vina%20Patricia-blue)](https://github.com/rizafajar7) [![1217050150](https://img.shields.io/badge/150-Ravigo%20Haykal%20A-blue)](https://github.com/rizkiisa21)
+[![1217050105](https://img.shields.io/badge/105-Muhammad%20Zaky%20M%20S-blue)]() [![1217050114](https://img.shields.io/badge/114-Pancadrya%20Y%20P-blue)](https://github.com/Pancadrya) [![1217050115](https://img.shields.io/badge/115-Pitriani-blue)]() 
+  [![1217050116](https://img.shields.io/badge/116-Raden%20Ibnu%20H%20W-blue)](https://github.com/hagendodo) [![1217050139](https://img.shields.io/badge/139-Vina%20Patricia-blue)]() [![1217050150](https://img.shields.io/badge/150-Ravigo%20Haykal%20A-blue)]()
   <br> [Teknik Informatika](http://if.uinsgd.ac.id/) [UIN Sunan Gunung Djati Bandung](https://uinsgd.ac.id/) 
 
 </div>
