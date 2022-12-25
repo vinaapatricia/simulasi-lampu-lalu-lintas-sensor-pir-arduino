@@ -69,6 +69,8 @@ Traffic regulation at crossroads is intended to regulate the movement of vehicle
 
 </div>
 
+ [Here's our code](https://github.com/hagendodo/simulasi-lampu-lalu-lintas-sensor-pir-arduino/blob/main/src)
+
 ## Discussion
 <div align="justify">
 Through this experiment, a miniature product or traffic light simulation was obtained. Armed with the components mentioned in the tools and materials section, a machine was born that can turn on green, yellow and red lights alternately with time intervals of 8 seconds, 2 seconds and 10 seconds respectively. 
